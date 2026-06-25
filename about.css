@@ -52,11 +52,16 @@ body {
 .ab-hero-slide {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: 0; transform: scale(1.05);
-  transition: opacity 1.5s ease-in-out, transform 8s ease-out;
+  opacity: 0;
+  animation: abHeroMove 20s infinite alternate linear;
 }
 .ab-hero-slide.active {
-  opacity: 0.3; transform: scale(1);
+  opacity: 0.3;
+}
+
+@keyframes abHeroMove {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
 }
 .ab-hero-hex-overlay {
   position: absolute; inset: 0;
@@ -559,22 +564,54 @@ body {
 
 @media(max-width: 1024px) {
   .ab-team-container { flex-direction: column; padding: 0 15px; }
-  .ab-team-left { text-align: center; margin-bottom: 80px; }
-  .ab-team-nav { top: -60px; right: 50%; transform: translateX(50%); }
-  .ab-carousel-track { height: 400px; display: flex; justify-content: center; }
+  .ab-team-left { text-align: center; margin-bottom: 60px; }
+  
+  /* Hide the carousel navigation arrows on mobile since we will stack them */
+  .ab-team-nav { display: none !important; }
+  
+  /* Make the track a normal flex column/grid, letting it grow with content */
+  .ab-carousel-track { 
+    height: auto !important; 
+    display: grid !important; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px !important; 
+    justify-content: center;
+    overflow: visible !important;
+  }
+  
+  /* Make all slides visible, relative, and normally positioned */
   .ab-team-slide { 
-    position: absolute; 
-    margin: 0 auto; 
-    left: 0; right: 0; 
-    width: 100%; 
-    max-width: 300px; 
-    height: 400px; 
+    position: relative !important; 
+    opacity: 1 !important; 
+    visibility: visible !important; 
+    margin: 0 auto !important; 
+    left: auto !important; right: auto !important; 
+    width: 100% !important; 
+    max-width: 320px !important; 
+    height: 400px !important; 
+    transform: none !important;
+  }
+  
+  /* Force images to be full color on mobile */
+  .ab-slide-img-wrap img {
+    filter: grayscale(0%) brightness(1) !important;
+  }
+  
+  /* Always show the orange info box */
+  .ab-slide-info-box {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  /* Always show the social links */
+  .ab-slide-socials {
+    opacity: 1 !important;
   }
 }
+
 @media(max-width: 600px) {
-  .ab-team-slide { max-width: 280px; height: 380px; }
-  .ab-carousel-track { height: 380px; }
-  .ab-slide-name-vertical { display: none; }
+  .ab-team-slide { max-width: 100% !important; height: 380px !important; }
+  .ab-slide-name-vertical { display: none !important; }
   .ab-slide-img-wrap { right: 0; bottom: 70px; }
   .ab-slide-info-box { right: 0; height: 70px; padding: 0 15px; }
   .info-text h3 { font-size: 18px; }

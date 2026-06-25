@@ -133,6 +133,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let autoplayInterval;
 
   function updateCarousel(index) {
+    // Disable GSAP carousel logic on mobile/tablet to allow pure CSS layout
+    if (window.innerWidth <= 1024) {
+      slides.forEach(slide => {
+        slide.classList.remove('active', 'next', 'prev');
+        gsap.killTweensOf(slide);
+        slide.removeAttribute('style');
+      });
+      return;
+    }
+
     slides.forEach((slide, i) => {
       // Calculate relative position with wrapping
       let diff = i - index;
@@ -141,9 +151,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // Reset classes
       slide.classList.remove('active', 'next', 'prev');
       
-      let xOffset = window.innerWidth <= 768 ? 40 : 200;
-      let prevOffset = window.innerWidth <= 768 ? -40 : -50;
-      let nextAlpha = window.innerWidth <= 768 ? 0 : 0.4;
+      let xOffset = 200;
+      let prevOffset = -50;
+      let nextAlpha = 0.4;
 
       if (diff === 0) {
         // ACTIVE SLIDE

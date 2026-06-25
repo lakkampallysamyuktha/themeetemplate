@@ -14,7 +14,7 @@
 .bl-hero-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('blogcsstheme.webp') center/cover no-repeat;
+  background: url('about5theme.webp') center/cover no-repeat;
   opacity: 0.4;
   z-index: -1;
   animation: bgMove 20s infinite alternate linear;

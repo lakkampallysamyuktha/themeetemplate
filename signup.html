@@ -931,14 +931,6 @@
                 // Build username from first + last
                 const username = [firstName, lastName].filter(Boolean).join(' ');
 
-                // Save temp user data for login auto-fill
-                localStorage.setItem('its_temp_user', JSON.stringify({
-                    email: email,
-                    username: username,
-                    role: role,
-                    organization: organization
-                }));
-
                 // Spinner
                 submitBtn.innerHTML = '<i class="ph ph-circle-notch spinner"></i> Creating account…';
 

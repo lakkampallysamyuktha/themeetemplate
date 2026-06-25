@@ -669,16 +669,7 @@
                 pwIcon.className = isText ? 'ph ph-eye' : 'ph ph-eye-slash';
             });
 
-            // ── Auto-fill from signup temp data ──
-            try {
-                const temp = JSON.parse(localStorage.getItem('its_temp_user') || '{}');
-                if (temp.email) {
-                    emailInput.value = temp.email || '';
-                    if (usernameInput) usernameInput.value = temp.username || temp.email.split('@')[0] || '';
-                    if (roleSelect && temp.role) roleSelect.value = temp.role;
-                    localStorage.removeItem('its_temp_user');
-                }
-            } catch (_) { /* ignore */ }
+            // Auto-fill logic removed as requested
 
             // ── Show error helper ──
             function showError(msg) {

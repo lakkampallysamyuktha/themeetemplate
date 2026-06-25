@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Stackly IT Solutions</title>
+  <meta name="description" content="Get in touch with Stackly. We deliver end-to-end IT consulting and software development services. Contact us for a free consultation.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- TOP BLACK BAR -->
+  <div class="top-bar">
+    <div class="left">
+      <span class="fire">🔥</span>
+      Hot Line: +123 12 0033 39
+    </div>
+    <div class="center">
+      <span class="star">✳</span>
+      8x the number of keywords sending traffic to your site
+    </div>
+    <div class="right">
+      <a href="404.html" class="top-icon" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </a>
+      <a href="404.html" class="top-icon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- WHITE NAVBAR -->
+  <div class="site-header" id="siteHeader">
+    <div class="navbar-wrap">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img src="logo-removebg-preview.webp" alt="Logo" class="logo-img">
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <a href="login.html" class="nav-cta">Login</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mobile overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Mobile slide-in menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Service</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="login.html" class="mobile-nav-cta" style="text-decoration:none; text-align:center; display:block; box-sizing:border-box;">Login</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 – HERO (BLACK)
+  ═══════════════════════════════════════════ -->
+  <section class="ct-hero" id="contactHero">
+    <!-- Moving background image slideshow -->
+    <div class="ct-hero-slides">
+      <div class="ct-hero-slide active" style="background-image:url('about1theme.webp')"></div>
+      <div class="ct-hero-slide" style="background-image:url('about2theme.webp')"></div>
+      <div class="ct-hero-slide" style="background-image:url('about3theme.webp')"></div>
+      <div class="ct-hero-slide" style="background-image:url('about4theme.webp')"></div>
+      <div class="ct-hero-hex-overlay"></div>
+    </div>
+
+    <div class="ct-hero-bg"></div>
+    <div class="ct-hero-glow ct-hero-glow--1"></div>
+    <div class="ct-hero-glow ct-hero-glow--2"></div>
+
+    <!-- Floating particles -->
+    <div class="ct-particles" id="ctParticles"></div>
+
+    <!-- Floating geometric shapes -->
+    <div class="ct-float ct-float--1"></div>
+    <div class="ct-float ct-float--2"></div>
+    <div class="ct-float ct-float--3"></div>
+    <div class="ct-float ct-float--4"></div>
+    <div class="ct-float ct-float--5"></div>
+    <div class="ct-float ct-float--6"></div>
+
+    <div class="ct-hero-content">
+      <nav class="ct-breadcrumb ct-anim" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="ct-breadcrumb-sep">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </span>
+        <span class="ct-breadcrumb-current">Contact</span>
+      </nav>
+      <h1 class="ct-hero-title ct-anim">Contact <span class="ct-title-accent">Us</span></h1>
+      <p class="ct-hero-sub ct-anim">Have a project in mind or need expert IT consultation? We'd love to hear from you. Reach out and let's build something extraordinary together.</p>
+      <div class="ct-hero-line ct-anim"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="ct-scroll-indicator ct-anim">
+      <div class="ct-scroll-mouse">
+        <div class="ct-scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 – CONTACT INFO CARDS (WHITE)
+  ═══════════════════════════════════════════ -->
+  <section class="ct-info" id="contactInfo">
+    <div class="ct-info-inner">
+      <div class="ct-info-header ct-reveal">
+        <div class="ct-info-header-left">
+          <span class="ct-eyebrow">Get In Touch</span>
+          <h2 class="ct-section-title">We're Here to Help</h2>
+        </div>
+        <div class="ct-info-header-right">
+          <p class="ct-section-desc">Connect with us through any of these channels. Our team is ready to assist you with your IT needs.</p>
+        </div>
+      </div>
+
+      <div class="ct-info-grid">
+        <!-- Card 1 - Address -->
+        <div class="ct-info-card ct-reveal" id="infoCard1">
+          <div class="ct-info-card-glow"></div>
+          <div class="ct-info-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Our Office</h3>
+          <p>855 Road, Brooklyn</p>
+          <p>New York, NY 10001</p>
+          <a href="404.html" class="ct-info-link">View on Map →</a>
+        </div>
+
+        <!-- Card 2 - Phone -->
+        <div class="ct-info-card ct-reveal" id="infoCard2">
+          <div class="ct-info-card-glow"></div>
+          <div class="ct-info-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3>Call Us</h3>
+          <p>+123 956-418-33</p>
+          <p>+123 956-418-34</p>
+          <a href="404.html" class="ct-info-link">Call Now →</a>
+        </div>
+
+        <!-- Card 3 - Email -->
+        <div class="ct-info-card ct-reveal" id="infoCard3">
+          <div class="ct-info-card-glow"></div>
+          <div class="ct-info-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <h3>Email Us</h3>
+          <p>info@stackly.com</p>
+          <p>support@stackly.com</p>
+          <a href="404.html" class="ct-info-link">Send Email →</a>
+        </div>
+
+        <!-- Card 4 - Hours -->
+        <div class="ct-info-card ct-reveal" id="infoCard4">
+          <div class="ct-info-card-glow"></div>
+          <div class="ct-info-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Working Hours</h3>
+          <p>Mon – Fri: 9:00 – 18:00</p>
+          <p>Sat – Sun: Closed</p>
+          <a href="404.html" class="ct-info-link">Schedule Meeting →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 – CONTACT FORM + MAP (WHITE)
+  ═══════════════════════════════════════════ -->
+  <section class="ct-form-section" id="contactForm">
+    <div class="ct-form-inner">
+
+      <!-- Form Column -->
+      <div class="ct-form-col ct-reveal">
+        <span class="ct-eyebrow">Send a Message</span>
+        <h2 class="ct-section-title">Let's Start a Conversation</h2>
+        <p class="ct-form-desc">Fill out the form below and our team will get back to you within 24 hours.</p>
+
+        <form class="ct-form" id="ctContactForm" novalidate>
+          <div class="ct-form-row">
+            <div class="ct-input-group">
+              <input type="text" id="ctName" name="name" required autocomplete="name" placeholder=" ">
+              <label for="ctName">Full Name</label>
+              <div class="ct-input-line"></div>
+              <span class="ct-error" id="ctNameError"></span>
+            </div>
+            <div class="ct-input-group">
+              <input type="email" id="ctEmail" name="email" required autocomplete="email" placeholder=" ">
+              <label for="ctEmail">Email Address</label>
+              <div class="ct-input-line"></div>
+              <span class="ct-error" id="ctEmailError"></span>
+            </div>
+          </div>
+          <div class="ct-form-row">
+            <div class="ct-input-group">
+              <input type="tel" id="ctPhone" name="phone" autocomplete="tel" placeholder=" ">
+              <label for="ctPhone">Phone Number</label>
+              <div class="ct-input-line"></div>
+              <span class="ct-error" id="ctPhoneError"></span>
+            </div>
+            <div class="ct-input-group">
+              <select id="ctSubject" name="subject" required>
+                <option value="" disabled selected></option>
+                <option value="general">General Inquiry</option>
+                <option value="project">New Project</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership</option>
+                <option value="careers">Careers</option>
+              </select>
+              <label for="ctSubject">Subject</label>
+              <div class="ct-input-line"></div>
+              <span class="ct-error" id="ctSubjectError"></span>
+            </div>
+          </div>
+          <div class="ct-input-group ct-input-group--full">
+            <textarea id="ctMessage" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="ctMessage">Your Message</label>
+            <div class="ct-input-line"></div>
+            <span class="ct-error" id="ctMessageError"></span>
+          </div>
+
+          <div class="ct-form-footer">
+            <button type="submit" class="ct-submit-btn" id="ctSubmitBtn">
+              <span class="ct-submit-text">Send Message</span>
+              <span class="ct-submit-loader"></span>
+              <svg class="ct-submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+
+          <!-- Success / Error Messages -->
+          <div class="ct-msg ct-msg--success" id="ctSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+              <strong>Message Sent Successfully!</strong>
+              <p>We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+          <div class="ct-msg ct-msg--error" id="ctFormError">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <strong>Oops! Something went wrong.</strong>
+              <p>Please check the form and try again.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Map Column -->
+      <div class="ct-map-col ct-reveal">
+        <div class="ct-map-wrap">
+          <div class="ct-map-glow"></div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Office Location Map">
+          </iframe>
+          <div class="ct-map-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Our Headquarters</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 – LOCATION / CTA (BLACK)
+  ═══════════════════════════════════════════ -->
+  <section class="ct-location" id="contactLocation">
+    <div class="ct-location-bg"></div>
+    <div class="ct-location-overlay"></div>
+
+    <!-- Animated marker dots removed as per user request -->
+
+    <div class="ct-location-inner ct-reveal">
+      <div class="ct-location-content">
+        <span class="ct-eyebrow ct-eyebrow--light">Global Presence</span>
+        <h2 class="ct-location-title">We Have Offices Around<br>The <span class="ct-title-accent">World</span></h2>
+        <p class="ct-location-desc">From New York to London, Singapore to Sydney — our global footprint means we're always within reach, ready to support your business 24/7.</p>
+        <div class="ct-location-offices">
+          <div class="ct-office">
+            <div class="ct-office-pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>New York</strong>
+              <p>855 Road, Brooklyn, NY</p>
+            </div>
+          </div>
+          <div class="ct-office">
+            <div class="ct-office-pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>London</strong>
+              <p>42 Baker Street, W1U</p>
+            </div>
+          </div>
+          <div class="ct-office">
+            <div class="ct-office-pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Singapore</strong>
+              <p>1 Raffles Place, #30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ct-location-cta">
+        <h3>Ready to Get Started?</h3>
+        <p>Schedule a free 30-minute consultation with our experts.</p>
+        <a href="404.html" class="ct-cta-btn">
+          Book a Consultation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 – FAQ (WHITE)
+  ═══════════════════════════════════════════ -->
+  <section class="ct-faq" id="contactFaq">
+    <div class="ct-faq-inner">
+      <div class="ct-section-header ct-reveal">
+        <span class="ct-eyebrow">FAQ</span>
+        <h2 class="ct-section-title">Frequently Asked Questions</h2>
+        <p class="ct-section-desc">Got questions? We've got answers. Find everything you need to know before reaching out.</p>
+      </div>
+
+      <div class="ct-faq-grid ct-reveal">
+        <!-- Left Column -->
+        <div class="ct-faq-col">
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>What IT services do you offer?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>We provide a full range of IT services including software development, cloud solutions, cybersecurity, IT consulting, data analytics, and managed IT services tailored to your business needs.</p>
+            </div>
+          </div>
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>How quickly can you start a project?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>After the initial consultation and scope agreement, we can typically begin within 1–2 weeks. For urgent projects, we offer expedited onboarding to get started even sooner.</p>
+            </div>
+          </div>
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>Do you provide ongoing support?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>Yes! We offer 24/7 dedicated support and maintenance plans. Our team ensures your systems run smoothly with proactive monitoring, regular updates, and rapid incident response.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="ct-faq-col">
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>What industries do you specialize in?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>We work across finance, healthcare, e-commerce, manufacturing, education, and government sectors. Our diverse expertise allows us to deliver industry-specific solutions with deep domain knowledge.</p>
+            </div>
+          </div>
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>How do you handle data security?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>Security is our top priority. We follow ISO 27001 standards, implement end-to-end encryption, conduct regular penetration testing, and maintain strict compliance with GDPR and industry regulations.</p>
+            </div>
+          </div>
+          <div class="ct-faq-item">
+            <button class="ct-faq-q" aria-expanded="false">
+              <span>Can I get a free consultation?</span>
+              <div class="ct-faq-icon"><span></span><span></span></div>
+            </button>
+            <div class="ct-faq-a">
+              <p>Absolutely! We offer a free 30-minute consultation to understand your requirements and propose the best approach. Simply fill out the contact form above or call us directly to schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER (Same as Home Page)
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-bg"></div>
+
+    <!-- TOP: Centered Logo -->
+    <div class="footer-logo-top" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      <img src="logo-removebg-preview.webp" alt="Logo" class="footer-logo-img">
+    </div>
+
+    <!-- MIDDLE: 3 Contact Icons -->
+    <div class="footer-icons-row">
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <span>+123 956-418-33</span>
+      </div>
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <span>stackly@company.com</span>
+      </div>
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <span>855 road, brooklyn, ny</span>
+      </div>
+    </div>
+
+    <!-- Floating Email Pill -->
+    <div class="footer-email-row">
+      <p class="footer-email-label">Subscribe to our newsletter for the latest IT insights</p>
+      <form class="footer-email-form" action="404.html" method="post">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Circular Quick Links -->
+    <div class="footer-links-circle">
+      <a href="index.html" class="footer-circle-link">Home</a>
+      <a href="about.html" class="footer-circle-link">About</a>
+      <a href="services.html" class="footer-circle-link">Services</a>
+      <a href="blog.html" class="footer-circle-link">Blog</a>
+      <a href="contact.html" class="footer-circle-link">Contact</a>
+      <a href="#" class="footer-circle-link">Privacy Policy</a>
+      <a href="#" class="footer-circle-link">Terms</a>
+      <a href="#" class="footer-circle-link">FAQs</a>
+      <a href="#" class="footer-circle-link">Careers</a>
+      <a href="#" class="footer-circle-link">Support</a>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Stackly - IT Services. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="404.html" class="footer-social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 002.856-3.51 9.86 9.86 0 01-2.836.856 4.958 4.958 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        </a>
+      </div>
+      <button class="footer-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – Stackly</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+  <!-- TOP BLACK BAR -->
+  <div class="top-bar">
+    <div class="left">
+      <span class="fire">🔥</span>
+      Hot Line: +123 12 0033 39
+    </div>
+    <div class="center">
+      <span class="star">✳</span>
+      8x the number of keywords sending traffic to your site
+    </div>
+    <div class="right">
+      <a href="404.html" class="top-icon" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </a>
+      <a href="404.html" class="top-icon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- WHITE NAVBAR (sticky) -->
+  <div class="site-header" id="siteHeader">
+    <div class="navbar-wrap">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img src="logo-removebg-preview.webp" alt="Logo" class="logo-img">
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>   
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="nav-cta">Login</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Service</a></li>  
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="login.html" class="mobile-nav-cta" style="text-decoration:none; text-align:center; display:block; box-sizing:border-box;">Login</a>
+  </div>
+
+  <!-- ═══ HERO BANNER ═══ -->
+  <section class="bl-hero-banner">
+    <div class="bl-hero-bg"></div>
+    <div class="bl-hero-inner">
+      <span class="bl-hero-eyebrow bl-reveal-up">
+        <span class="bl-hero-dot"></span>
+        Stay Updated
+      </span>
+      <h1 class="bl-reveal-up" data-delay="0.1s">Our Latest News</h1>
+      <div class="bl-breadcrumb bl-reveal-up" data-delay="0.2s">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURED ARTICLE [NEW] ═══ -->
+  <section class="bl-featured">
+    <div class="bl-container bl-featured-inner bl-reveal-up">
+      <div class="bl-featured-img">
+        <img src="blog1theme.webp" alt="Featured Article">
+        <div class="bl-featured-badge">Featured</div>
+      </div>
+      <div class="bl-featured-content">
+        <div class="bl-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Editorial Team</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Innovation</span>
+        </div>
+        <h2><a href="404.html">The Architect's Guide to Building Enterprise-Grade Software</a></h2>
+        <p>A comprehensive deep-dive into the patterns, practices, and principles required to build scalable and resilient enterprise architectures in 2026. Learn how top companies are restructuring their tech stacks.</p>
+        <a href="404.html" class="bl-read-more">Read Full Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BLOG MAIN CONTENT ═══ -->
+  <section class="bl-main-section">
+    <div class="bl-container">
+      
+      <!-- Top Filters -->
+      <div class="bl-filters bl-reveal-up">
+        <button class="active">All Categories</button>
+        <button onclick="window.location.href='404.html'">IT Consulting</button>
+        <button onclick="window.location.href='404.html'">Cloud Services</button>
+        <button onclick="window.location.href='404.html'">Cybersecurity</button>
+        <button onclick="window.location.href='404.html'">Software Dev</button>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="bl-grid">
+        
+        <!-- Blog Card 1 -->
+        <article class="bl-card bl-reveal-up">
+          <div class="bl-card-img-wrap">
+            <img src="blog2theme.webp" alt="Blog 1">
+            <div class="bl-card-date">
+              <strong>15</strong>
+              <span>May</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Admin</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Cloud Services</span>
+            </div>
+            <h3><a href="404.html">The Future of Cloud Native Architectures in 2026</a></h3>
+            <p>Discover how enterprises are transitioning from legacy systems to fully managed cloud-native microservices.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="bl-card bl-reveal-up" data-delay="0.1s">
+          <div class="bl-card-img-wrap">
+            <img src="blog3theme.webp" alt="Blog 2">
+            <div class="bl-card-date">
+              <strong>12</strong>
+              <span>May</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Alex R.</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Cybersecurity</span>
+            </div>
+            <h3><a href="404.html">Zero Trust Security: What You Need to Know</a></h3>
+            <p>Why perimeter-based security is no longer enough and how to implement zero trust principles.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="bl-card bl-reveal-up" data-delay="0.2s">
+          <div class="bl-card-img-wrap">
+            <img src="blog4theme.webp" alt="Blog 3">
+            <div class="bl-card-date">
+              <strong>08</strong>
+              <span>May</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Sarah T.</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Software Dev</span>
+            </div>
+            <h3><a href="404.html">Accelerating Time to Market with Agile</a></h3>
+            <p>How integrating CI/CD pipelines and agile methodologies can double your software output.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="bl-card bl-reveal-up">
+          <div class="bl-card-img-wrap">
+            <img src="blog5theme.webp" alt="Blog 4">
+            <div class="bl-card-date">
+              <strong>04</strong>
+              <span>May</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Admin</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Data Analytics</span>
+            </div>
+            <h3><a href="404.html">Leveraging Big Data for Business Intelligence</a></h3>
+            <p>Transforming raw data into actionable insights to drive better executive decisions.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="bl-card bl-reveal-up" data-delay="0.1s">
+          <div class="bl-card-img-wrap">
+            <img src="blog6theme.webp" alt="Blog 5">
+            <div class="bl-card-date">
+              <strong>29</strong>
+              <span>Apr</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> John D.</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> IT Consulting</span>
+            </div>
+            <h3><a href="404.html">The Importance of IT Strategy Alignment</a></h3>
+            <p>Why your technology initiatives must directly support your overarching business goals.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="bl-card bl-reveal-up" data-delay="0.2s">
+          <div class="bl-card-img-wrap">
+            <img src="blog7theme.webp" alt="Blog 6">
+            <div class="bl-card-date">
+              <strong>21</strong>
+              <span>Apr</span>
+            </div>
+          </div>
+          <div class="bl-card-content">
+            <div class="bl-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Admin</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Innovation</span>
+            </div>
+            <h3><a href="404.html">Integrating AI into Everyday Workflows</a></h3>
+            <p>Practical approaches to adopting machine learning and automation tools in your daily operations.</p>
+            <a href="404.html" class="bl-read-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="bl-pagination bl-reveal-up">
+        <a href="404.html" class="prev-next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Prev</a>
+        <a href="404.html" class="page-num active">1</a>
+        <a href="404.html" class="page-num">2</a>
+        <a href="404.html" class="page-num">3</a>
+        <span class="dots">...</span>
+        <a href="404.html" class="prev-next">Next <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ BROWSE BY TOPICS [NEW] ═══ -->
+  <section class="bl-topics">
+    <div class="bl-container">
+      <div class="bl-topics-header bl-reveal-up">
+        <h2>Browse by Topic</h2>
+        <p>Explore our vast library of knowledge by your favorite category.</p>
+      </div>
+      <div class="bl-topics-grid">
+        <a href="404.html" class="bl-topic-card bl-reveal-up">
+          <div class="bl-topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Cloud Infrastructure</h3>
+          <span>24 Articles</span>
+        </a>
+        <a href="404.html" class="bl-topic-card bl-reveal-up" data-delay="0.1s">
+          <div class="bl-topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Cybersecurity</h3>
+          <span>18 Articles</span>
+        </a>
+        <a href="404.html" class="bl-topic-card bl-reveal-up" data-delay="0.2s">
+          <div class="bl-topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Software Engineering</h3>
+          <span>36 Articles</span>
+        </a>
+        <a href="404.html" class="bl-topic-card bl-reveal-up" data-delay="0.3s">
+          <div class="bl-topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20"/><path d="M12 2v20" transform="rotate(90 12 12)"/></svg></div>
+          <h3>Data & Analytics</h3>
+          <span>12 Articles</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER CTA [NEW] ═══ -->
+  <section class="bl-newsletter">
+    <div class="bl-container bl-newsletter-inner bl-reveal-up">
+      <div class="bl-newsletter-content">
+        <h2>Get Tech Insights Weekly</h2>
+        <p>Join 20,000+ professionals receiving our latest tutorials, insights, and tech news.</p>
+      </div>
+      <form class="bl-newsletter-form">
+        <input type="email" placeholder="Your Business Email" required>
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer">
+    <div class="footer-bg"></div>
+
+    <div class="footer-logo-top" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      <img src="logo-removebg-preview.webp" alt="Logo" class="footer-logo-img">
+    </div>
+
+    <div class="footer-icons-row">
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <span>+123 956-418-33</span>
+      </div>
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <span>stackly@company.com</span>
+      </div>
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <span>855 road, brooklyn, ny</span>
+      </div>
+    </div>
+
+    <div class="footer-email-row">
+      <p class="footer-email-label">Subscribe to our newsletter for the latest IT insights</p>
+      <form class="footer-email-form" action="404.html" method="post">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-links-circle">
+      <a href="index.html" class="footer-circle-link">Home</a>
+      <a href="about.html" class="footer-circle-link">About</a>
+      <a href="services.html" class="footer-circle-link">Services</a>
+      <a href="blog.html" class="footer-circle-link">Blog</a>
+      <a href="contact.html" class="footer-circle-link">Contact</a>
+      <a href="404.html" class="footer-circle-link">Privacy Policy</a>
+      <a href="404.html" class="footer-circle-link">Terms</a>
+      <a href="404.html" class="footer-circle-link">FAQs</a>
+      <a href="404.html" class="footer-circle-link">Careers</a>
+      <a href="404.html" class="footer-circle-link">Support</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Stackly - IT Services. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="404.html" class="footer-social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 002.856-3.51 9.86 9.86 0 01-2.836.856 4.958 4.958 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        </a>
+      </div>
+      <button class="footer-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>

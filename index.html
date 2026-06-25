@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly – IT Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BLACK BAR -->
+  <div class="top-bar">
+    <div class="left">
+      <span class="fire">🔥</span>
+      Hot Line: +123 12 0033 39
+    </div>
+    <div class="center">
+      <span class="star">✳</span>
+      8x the number of keywords sending traffic to your site
+    </div>
+    <div class="right">
+      <a href="404.html" class="top-icon" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </a>
+      <a href="404.html" class="top-icon" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- WHITE NAVBAR -->
+  <div class="site-header" id="siteHeader">
+    <div class="navbar-wrap">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <img src="logo-removebg-preview.webp" alt="Logo" class="logo-img">
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+       <a href="login.html" class="nav-cta">Login</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mobile overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Mobile slide‑in menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuCloseBtn" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Service</a></li>
+      <li><a href="404.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="login.html" class="mobile-nav-cta" style="text-decoration:none; text-align:center; display:block; box-sizing:border-box;">Login</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('index1theme.webp')"></div>
+      <div class="hero-slide" style="background-image:url('index2theme.webp')"></div>
+      <div class="hero-slide" style="background-image:url('index3theme.webp')"></div>
+      <div class="hero-slide" style="background-image:url('index4theme.webp')"></div>
+      <div class="hero-hex-overlay"></div>
+    </div>
+    <div class="hero-glow"></div>
+
+    <div class="email-pill">support@stackly.com</div>
+
+    <div class="social-icons">
+      <a href="404.html" aria-label="Facebook">Facebook</a>
+      <a href="404.html" aria-label="Youtube">Youtube</a>
+      <a href="404.html" aria-label="Twitter">twitter</a>
+      <a href="404.html" aria-label="LinkedIn">linkdin</a>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-eyebrow anim-1">
+          <span class="hero-eyebrow-dot"></span>
+          #1 Award-Winning IT Consulting Agency
+        </div>
+        <h1 class="hero-title anim-1">Innovative Tech Solutions</h1>
+        <p class="hero-subtitle anim-2">We deliver end-to-end IT consulting and software development services that help organizations scale smarter, secure faster, and grow with confidence — strategy built around your goals.</p>
+        <div class="hero-pills anim-2">
+          <div class="hero-pill"><span class="hero-pill-num">500+</span><span class="hero-pill-label">Projects Delivered</span></div>
+          <div class="hero-pill-sep"></div>
+          <div class="hero-pill"><span class="hero-pill-num">98%</span><span class="hero-pill-label">Client Satisfaction</span></div>
+          <div class="hero-pill-sep"></div>
+          <div class="hero-pill"><span class="hero-pill-num">12+</span><span class="hero-pill-label">Years Experience</span></div>
+        </div>
+        <div class="hero-actions anim-3">
+          <button class="btn-consult" onclick="window.location.href='404.html'">Consulting Now</button>
+          <a href="404.html" class="video-btn">
+            <div class="video-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            <div><span class="video-label">Watch Intro Video</span><span class="video-duration">90 Seconds</span></div>
+          </a>
+        </div>
+        <div class="hero-trust anim-3">
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>ISO Certified</span></div>
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg><span>24/7 Support</span></div>
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Secure &amp; Compliant</span></div>
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>50+ Expert Team</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-bg"></div>
+    <div class="stats-left">
+      <div class="stat-item"><span class="stat-number">+60</span><span class="stat-label">Daily Customer</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><span class="stat-number">50</span><span class="stat-label">Team Member</span></div>
+    </div>
+    <div class="stats-right">
+      <div class="stats-profile"><img src="https://i.pravatar.cc/48?img=12" alt="Profile" class="stats-avatar"><p class="stats-quote">Consulting &amp; Finance Services Built<br>Specifically For your Business.</p></div>
+      <div class="stats-arrows"><button class="arrow-btn" onclick="window.location.href='404.html'">&#8592;</button><button class="arrow-btn" onclick="window.location.href='404.html'">&#8594;</button></div>
+    </div>
+  </div>
+
+  <!-- BRAND NAMES -->
+  <div class="brands-bar">
+    <div class="brands-track">
+      <div class="brand-item"><span>envato</span></div>
+      <div class="brand-item"><span>Google</span></div>
+      <div class="brand-item"><span>Sketch</span></div>
+      <div class="brand-item"><span>slack</span></div>
+      <div class="brand-item"><span>amazon</span></div>
+      <div class="brand-item"><span>Microsoft</span></div>
+      <div class="brand-item"><span>envato</span></div>
+      <div class="brand-item"><span>Google</span></div>
+      <div class="brand-item"><span>Sketch</span></div>
+      <div class="brand-item"><span>slack</span></div>
+      <div class="brand-item"><span>amazon</span></div>
+      <div class="brand-item"><span>Microsoft</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-media about-anim-left">
+        <img src="ab2_2.webp" alt="Working together" class="about-img-main">
+        <img src="ab2_1.webp" alt="Team member" class="about-img-float">
+        <div class="about-badge-spin" onclick="window.location.href='404.html'" style="cursor: pointer;">
+          <svg class="about-badge-ring" viewBox="0 0 130 130">
+            <defs><path id="badgeCirclePath" d="M65,65 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/></defs>
+            <text><textPath href="#badgeCirclePath">PLAY REEL • PLAY REEL • PLAY REEL • PLAY REEL • </textPath></text>
+          </svg>
+          <svg class="about-badge-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="about-text about-anim-right">
+        <span class="about-eyebrow">About Our Company</span>
+        <h2 class="about-title">Work Together<br>for Your Business</h2>
+        <p class="about-desc">IT consulting and software development services. We have helped non-IT organizations and companies improve business with strategy built around your goals.</p>
+        <div class="about-features">
+          <div class="about-stamp"><img src="ab-icon-1.webp" alt="Certified" class="about-stamp-icon"><span>Certified</span></div>
+          <ul class="about-list">
+            <li class="about-anim-stagger"><span class="about-arrow">&#8594;</span> Solution We Provide For You</li>
+            <li class="about-anim-stagger"><span class="about-arrow">&#8594;</span> Provide Finest Services</li>
+            <li class="about-anim-stagger"><span class="about-arrow">&#8594;</span> Providing Information To A Client</li>
+            <li class="about-anim-stagger"><span class="about-arrow">&#8594;</span> Strategic Planning</li>
+          </ul>
+        </div>
+        <button class="btn-consult about-anim-stagger" onclick="window.location.href='404.html'">Consulting Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="services-bg"></div>
+    <div class="services-inner">
+      <div class="services-list">
+        <span class="service-eyebrow">Our Services</span>
+        <h2 class="services-heading">We signed $70b in new<br>business in January.<br>Most award winning agency.</h2>
+        <div class="service-item active" data-img="index5theme.webp">
+          <div class="service-item-header">
+            <div class="service-item-left"><img src="https://i.pravatar.cc/52?img=15" alt="" class="service-avatar"><div><p class="service-name">Information Security</p><p class="service-sub">Leverage agile Frameworks</p></div></div>
+            <button class="service-arrow-btn" aria-label="Go"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></button>
+          </div>
+          <div class="service-progress-wrap"><div class="service-progress-bar"><div class="service-progress-fill" style="width:95%"></div><span class="service-progress-label">95%</span></div></div>
+        </div>
+        <div class="service-item" data-img="index6theme.webp">
+          <div class="service-item-header">
+            <div class="service-item-left"><div><p class="service-name">IT Consultancy</p><p class="service-sub">Distinctively Revolutionary</p></div></div>
+            <button class="service-arrow-btn" aria-label="Go"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></button>
+          </div>
+          <div class="service-progress-wrap"><div class="service-progress-bar"><div class="service-progress-fill" style="width:88%"></div><span class="service-progress-label">88%</span></div></div>
+        </div>
+        <div class="service-item" data-img="index3theme.webp">
+          <div class="service-item-header">
+            <div class="service-item-left"><div><p class="service-name">Business Growth</p><p class="service-sub">Business Applications Through</p></div></div>
+            <button class="service-arrow-btn" aria-label="Go"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></button>
+          </div>
+          <div class="service-progress-wrap"><div class="service-progress-bar"><div class="service-progress-fill" style="width:80%"></div><span class="service-progress-label">80%</span></div></div>
+        </div>
+        <div class="service-item" data-img="index1theme.webp">
+          <div class="service-item-header">
+            <div class="service-item-left"><div><p class="service-name">IT Management</p><p class="service-sub">Catalysts for Chang the Seamlessly</p></div></div>
+            <button class="service-arrow-btn" aria-label="Go"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></button>
+          </div>
+          <div class="service-progress-wrap"><div class="service-progress-bar"><div class="service-progress-fill" style="width:75%"></div><span class="service-progress-label">75%</span></div></div>
+        </div>
+      </div>
+      <div class="services-image-wrap">
+        <div class="services-img-tilt"><img src="index5theme.webp" alt="Services" class="services-img" id="servicesImg"><div class="services-img-badge">Read More</div></div>
+        <div class="services-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTS SECTION -->
+  <section class="experts" id="experts">
+    <div class="experts-bg"></div>
+    <div class="experts-overlay"></div>
+    <div class="experts-inner">
+      <div class="experts-stats">
+        <div class="experts-stat-item"><div class="experts-stat-anim" style="display:flex;align-items:flex-start;gap:20px;"><div class="experts-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="experts-stat-body"><div class="experts-stat-numrow"><span class="experts-stat-num" data-target="25521">0</span><span class="experts-stat-plus">+</span></div><span class="experts-stat-label">Completed Cases</span></div></div></div>
+        <div class="experts-stat-item"><div class="experts-stat-anim" style="display:flex;align-items:flex-start;gap:20px;"><div class="experts-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="experts-stat-body"><div class="experts-stat-numrow"><span class="experts-stat-num" data-target="8762">0</span><span class="experts-stat-plus">+</span></div><span class="experts-stat-label">Happy Customers</span></div></div></div>
+        <div class="experts-stat-item"><div class="experts-stat-anim" style="display:flex;align-items:flex-start;gap:20px;"><div class="experts-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M3 21a9 9 0 0 1 18 0"/></svg></div><div class="experts-stat-body"><div class="experts-stat-numrow"><span class="experts-stat-num" data-target="3265">0</span><span class="experts-stat-plus">+</span></div><span class="experts-stat-label">Expert Members</span></div></div></div>
+      </div>
+      <div class="experts-content">
+        <span class="experts-eyebrow experts-anim">Trusted By Thousands</span>
+        <h2 class="experts-title experts-anim">We're the Stand Out<br>Experts in Tech Business</h2>
+        <p class="experts-desc experts-anim">We partner with businesses to solve complex technology challenges — delivering measurable outcomes that drive real growth, security, and long-term success.</p>
+        <ul class="experts-bullets experts-anim">
+          <li><span class="experts-bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span>692% Campaign ROI Exceeds</li>
+          <li><span class="experts-bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span>8x the number of keywords sending traffic to your site</li>
+          <li><span class="experts-bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></span>296% increase in organic traffic</li>
+        </ul>
+        <button class="btn-consult experts-anim" onclick="window.location.href='404.html'">Consulting Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT SOLUTIONS SERVICES -->
+  <section class="it-solutions" id="it-solutions">
+    <div class="it-solutions-inner">
+      <h2 class="it-solutions-heading">IT Solutions Services</h2>
+      <div class="it-solutions-grid">
+        <div class="it-sol-card">
+          <div class="it-sol-img-wrap"><img src="index1theme.webp" alt="Quality IT Solutions" class="it-sol-img"></div>
+          <div class="it-sol-body">
+            <div class="it-sol-header-row"><div class="it-sol-icon-wrap"><svg viewBox="0 0 48 48" fill="none"><rect x="4" y="26" width="8" height="16" rx="2" fill="#222"/><rect x="18" y="18" width="8" height="24" rx="2" fill="#222"/><rect x="32" y="8" width="8" height="34" rx="2" fill="#222"/><polyline points="7,25 21,15 35,20 44,8" stroke="#ff5722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="44" cy="8" r="3" fill="#ff5722"/></svg></div><h3 class="it-sol-title">Quality IT<br>Solutions</h3></div>
+            <p class="it-sol-desc">IT consulting and software development services. We have helped non-IT organizations and companies improve business performance.</p>
+          </div>
+          <a href="404.html" class="it-sol-btn">Consulting Now</a>
+        </div>
+        <div class="it-sol-card">
+          <div class="it-sol-img-wrap"><img src="index4theme.webp" alt="Software Development" class="it-sol-img"></div>
+          <div class="it-sol-body">
+            <div class="it-sol-header-row"><div class="it-sol-icon-wrap"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="10" r="5" fill="#222"/><circle cx="10" cy="38" r="5" fill="#222"/><circle cx="38" cy="38" r="5" fill="#222"/><line x1="24" y1="15" x2="10" y2="33" stroke="#222" stroke-width="2.5"/><line x1="24" y1="15" x2="38" y2="33" stroke="#222" stroke-width="2.5"/><line x1="10" y1="38" x2="38" y2="38" stroke="#ff5722" stroke-width="2.5"/><circle cx="24" cy="27" r="5" stroke="#ff5722" stroke-width="2.5" fill="white"/><circle cx="24" cy="27" r="2" fill="#ff5722"/></svg></div><h3 class="it-sol-title">Software<br>Development</h3></div>
+            <p class="it-sol-desc">IT consulting and software development services. We have helped non-IT organizations and companies improve business performance.</p>
+          </div>
+          <a href="404.html" class="it-sol-btn">Consulting Now</a>
+        </div>
+        <div class="it-sol-card">
+          <div class="it-sol-img-wrap"><img src="index5theme.webp" alt="IT Solution Management" class="it-sol-img"></div>
+          <div class="it-sol-body">
+            <div class="it-sol-header-row"><div class="it-sol-icon-wrap"><svg viewBox="0 0 48 48" fill="none"><path d="M8 26 L16 18 C17 17 19 17 20 18 L24 22 L30 16 C31 15 33 15 34 16 L40 22" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 30 C14 30 20 36 24 34 C28 32 34 26 34 26" stroke="#222" stroke-width="2.5" stroke-linecap="round"/><circle cx="36" cy="11" r="5" stroke="#ff5722" stroke-width="2.5" fill="none"/><text x="33" y="15" font-size="8" fill="#ff5722" font-family="sans-serif">$</text></svg></div><h3 class="it-sol-title">IT Solution<br>Management</h3></div>
+            <p class="it-sol-desc">IT consulting and software development services. We have helped non-IT organizations and companies improve business performance.</p>
+          </div>
+          <a href="404.html" class="it-sol-btn">Consulting Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- SOLUTIONS SERVICES -->
+  <section class="solutions-services" id="solutions-services">
+    <div class="solutions-inner">
+      <div class="solutions-media solutions-anim-left">
+        <div class="solutions-img-top"><img src="about5theme.webp" alt="IT Consultant" class="solutions-img solutions-img-a"><img src="index5theme.webp" alt="Team working" class="solutions-img solutions-img-b"></div>
+        <div class="solutions-img-bottom"><img src="about7theme.webp" alt="Professional" class="solutions-img solutions-img-c"><div class="solutions-price-card"><div class="solutions-price-circuit"></div><p class="solutions-plan-label">Unlimited plan</p><p class="solutions-price"><span class="solutions-currency">US$</span> 16.60 <span class="solutions-per">//per month</span></p><p class="solutions-plan-sub">Unlimited plan</p></div></div>
+      </div>
+      <div class="solutions-text solutions-anim-right">
+        <span class="solutions-eyebrow">Price List Services</span>
+        <h2 class="solutions-title">Solutions Services<br>For Your Business</h2>
+        <p class="solutions-desc">IT consulting and software development services. We have helped non-IT organizations and companies improve business and companies improve</p>
+        <ul class="solutions-list">
+          <li class="solutions-list-item solutions-stagger"><span class="solutions-list-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ff5722"/><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Solution We Provide For You</li>
+          <li class="solutions-list-item solutions-stagger"><span class="solutions-list-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ff5722"/><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Provide Finest Services</li>
+          <li class="solutions-list-item solutions-stagger"><span class="solutions-list-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ff5722"/><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Providing Information To A Client.</li>
+          <li class="solutions-list-item solutions-stagger"><span class="solutions-list-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ff5722"/><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Strategic Planning.</li>
+        </ul>
+        <button class="btn-consult solutions-stagger" onclick="window.location.href='404.html'">Consulting Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAMS SECTION -->
+  <section class="teams" id="teams">
+    <div class="teams-bg"></div>
+    <div class="teams-inner">
+      <div class="teams-main-image"><img id="mainTeamImg" src="team1.jpg" alt="Team Member"><div class="teams-img-badge">Meet The Team</div></div>
+      <div class="teams-sidebar">
+        <div class="teams-content" id="teamContent"><span class="teams-eyebrow">Our Experts</span><h2>Sarah Johnson</h2><p class="teams-role">Lead Developer &amp; Strategist</p><p class="teams-bio">Sarah brings over 12 years of experience in full-stack development and agile methodologies, helping Fortune 500 companies scale their digital infrastructure.</p><div class="teams-social"><a href="404.html" class="ti ti-brand-facebook"></a><a href="404.html" class="ti ti-brand-twitter"></a><a href="404.html" class="ti ti-brand-linkedin"></a><a href="404.html" class="ti ti-brand-instagram"></a></div></div>
+        <div class="teams-thumbnails"><img class="team-thumb active" data-index="0" src="indexthemeteam1.webp" alt="Sarah Johnson"><img class="team-thumb" data-index="1" src="index2team.webp" alt="Michael Chen"><img class="team-thumb" data-index="2" src="index3team.webp" alt="Emily Rodriguez"><img class="team-thumb" data-index="3" src="index4team.webp" alt="David Kim"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section class="blogs" id="blogs">
+    <div class="blogs-bg"></div>
+    <div class="blogs-inner">
+      <div class="blogs-header"><span class="blogs-eyebrow">Our Blog</span><h2>Latest IT Insights &amp; Stories</h2><p>Stay updated with expert articles on technology, cybersecurity, data, and digital transformation.</p></div>
+      <div class="blogs-grid">
+        <article class="blog-card"><div class="blog-img-wrap"><img src="indexblog1.webp" alt="AI in Business"><span class="blog-tag">AI &amp; ML</span></div><div class="blog-body"><h3>The Future of AI in Business</h3><p>Explore how artificial intelligence is transforming industries and creating new opportunities for IT‑driven growth.</p><div class="blog-meta"><span class="blog-date">May 15, 2026</span><a href="404.html" class="blog-readmore">Read More →</a></div></div></article>
+        <article class="blog-card"><div class="blog-img-wrap"><img src="viewer4theme.webp" alt="Data Analytics"><span class="blog-tag">Data</span></div><div class="blog-body"><h3>How to Leverage Data Analytics</h3><p>Unlock the power of data to make smarter decisions and drive measurable business outcomes with modern IT tools.</p><div class="blog-meta"><span class="blog-date">May 10, 2026</span><a href="404.html" class="blog-readmore">Read More →</a></div></div></article>
+        <article class="blog-card"><div class="blog-img-wrap"><img src="blog6theme.webp" alt="Tech Trends"><span class="blog-tag">Trends</span></div><div class="blog-body"><h3>Top Tech Trends to Watch in 2026</h3><p>From quantum computing to sustainable tech – stay ahead of the curve with our expert predictions for IT leaders.</p><div class="blog-meta"><span class="blog-date">May 5, 2026</span><a href="404.html" class="blog-readmore">Read More →</a></div></div></article>
+        <article class="blog-card"><div class="blog-img-wrap"><img src="viewer6theme.webp" alt="Cybersecurity"><span class="blog-tag">Security</span></div><div class="blog-body"><h3>Cybersecurity</h3><p>Learn essential strategies to safeguard your data, prevent breaches, and maintain compliance in an increasingly hostile digital landscape.</p><div class="blog-meta"><span class="blog-date">April 28, 2026</span><a href="404.html" class="blog-readmore">Read More →</a></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER – with Email Subscription & Two‑Row Links (FIXED)
+  ============================================= -->
+  <footer class="footer">
+    <div class="footer-bg"></div>
+
+    <!-- TOP: Centered Logo -->
+    <div class="footer-logo-top" onclick="window.location.href='index.html'" style="cursor: pointer;">
+      <img src="logo-removebg-preview.webp" alt="Logo" class="footer-logo-img">
+    </div>
+
+    <!-- MIDDLE: 3 Contact Icons with gaps -->
+    <div class="footer-icons-row">
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <span>+123 956-418-33</span>
+      </div>
+
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <span>stackly@company.com</span>
+      </div>
+
+      <div class="footer-icon-item">
+        <div class="footer-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <span>855 road, brooklyn, ny</span>
+      </div>
+    </div>
+
+    <!-- ─── FLOATING EMAIL PILL (FIXED TEXT) ─── -->
+    <div class="footer-email-row">
+      <p class="footer-email-label">Subscribe to our newsletter for the latest IT insights</p>
+      <form class="footer-email-form" action="404.html" method="post">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- ─── CIRCULAR QUICK LINKS ─── -->
+<div class="footer-links-circle">
+  <a href="index.html" class="footer-circle-link">Home</a>
+  <a href="about.html" class="footer-circle-link">About</a>
+  <a href="services.html" class="footer-circle-link">Services</a>
+  <a href="404.html" class="footer-circle-link">Blog</a>
+  <a href="contact.html" class="footer-circle-link">Contact</a>
+  <a href="404.html" class="footer-circle-link">Privacy Policy</a>
+  <a href="404.html" class="footer-circle-link">Terms</a>
+  <a href="404.html" class="footer-circle-link">FAQs</a>
+  <a href="404.html" class="footer-circle-link">Careers</a>
+  <a href="404.html" class="footer-circle-link">Support</a>
+</div>
+
+    <!-- BOTTOM: Copyright LEFT | Social RIGHT + Scroll Up -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Stackly - IT Services. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="404.html" class="footer-social-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 002.856-3.51 9.86 9.86 0 01-2.836.856 4.958 4.958 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="404.html" class="footer-social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        </a>
+      </div>
+      <button class="footer-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

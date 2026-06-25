@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found – Stackly</title>
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Common Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 404 Specific Styles -->
+  <link rel="stylesheet" href="404.css">
+</head>
+<body class="error-page">
+
+  <div class="error-container">
+    <!-- Glowing Hex Background -->
+    <div class="error-hex-overlay"></div>
+    <div class="error-glow"></div>
+    <div class="error-glow error-glow-2"></div>
+
+    <div class="error-content">
+      <!-- Animated 404 Digits -->
+      <div class="error-title">
+        <span class="digit">4</span>
+        <span class="digit bounce-digit">0</span>
+        <span class="digit">4</span>
+      </div>
+      
+      <div class="error-text-wrap">
+        <h1 class="error-heading">Oops! Page Not Found</h1>
+        <p class="error-desc">We can't seem to find the page you're looking for. It might have been removed, renamed, or did not exist in the first place.</p>
+      </div>
+
+      <div class="error-actions">
+        <a href="index.html" class="error-btn primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Go to Home
+        </a>
+        <button onclick="window.history.back()" class="error-btn secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Go Back
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="404.js"></script>
+</body>
+</html>

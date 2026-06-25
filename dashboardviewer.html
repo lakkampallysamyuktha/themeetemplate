@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly · Viewer Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" href="dashboardviewer.css" />
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════════
+    SIDEBAR
+    ═══════════════════════════════════════════════════ -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html"><img src="logo-removebg-preview.webp" alt="Stackly" class="nav-logo-img" /></a>
+            <button class="sidebar-close" id="sidebarCloseBtn">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-section-label">Main</div>
+            <a href="#" class="nav-item active" data-page="overview"><i class="ph ph-squares-four"></i><span>Overview</span></a>
+            <a href="#" class="nav-item" data-page="energy"><i class="ph ph-activity"></i><span>System Status</span></a>
+            <a href="#" class="nav-item" data-page="sites"><i class="ph ph-map-pin"></i><span>Global Network</span></a>
+            <a href="#" class="nav-item" data-page="reports"><i class="ph ph-chart-bar"></i><span>Reports</span></a>
+            <div class="nav-section-label">Resources</div>
+            <a href="#" class="nav-item" data-page="gallery"><i class="ph ph-images"></i><span>Gallery</span></a>
+            <a href="#" class="nav-item" data-page="news"><i class="ph ph-newspaper"></i><span>News</span></a>
+            <a href="#" class="nav-item" data-page="learn"><i class="ph ph-book-open"></i><span>Learn</span></a>
+            <div class="nav-section-label">Account</div>
+            <a href="#" class="nav-item" data-page="profile"><i class="ph ph-user-circle"></i><span>My Profile</span></a>
+            <a href="#" class="nav-item" data-page="settings"><i class="ph ph-gear"></i><span>Settings</span></a>
+        </nav>
+        <div class="sidebar-bottom">
+            <a href="index.html" class="logout-btn"><i class="ph ph-sign-out"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- ═══════════════════════════════════════════════════
+    TOPBAR
+    ═══════════════════════════════════════════════════ -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <button class="hamburger" id="hamburger"><i class="ph ph-list"></i></button>
+            <div class="topbar-title" id="pageTitle">Overview</div>
+        </div>
+        <div class="topbar-right">
+            <div class="topbar-actions">
+                <button class="topbar-btn" onclick="location.href='404.html'"><i class="ph ph-bell"></i></button>
+                <button class="topbar-btn" onclick="location.href='404.html'"><i class="ph ph-magnifying-glass"></i></button>
+            </div>
+            <div class="user-profile">
+                <div class="user-avatar" id="userAvatar">V</div>
+                <div class="user-info-text">
+                    <div class="user-name" id="userName">Viewer</div>
+                    <div class="user-email" id="userEmail">viewer@stackly.org</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ═══════════════════════════════════════════════════
+    MAIN CONTENT
+    ═══════════════════════════════════════════════════ -->
+    <main class="main-content">
+
+        <!-- ─── OVERVIEW ─── -->
+        <div class="page active" id="page-overview">
+            <div class="user-greeting">
+                <div>
+                    <h2 id="greetName">Hello, Viewer!</h2>
+                    <p id="greetEmail">viewer@stackly.org · Viewer</p>
+                </div>
+                <div class="greeting-badge"><i class="ph ph-sun"></i> Live Data</div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="stat-card green"><i class="ph ph-hard-drives"></i><div class="stat-val">42</div><div class="stat-lbl">Active Servers</div></div>
+                <div class="stat-card teal"><i class="ph ph-file-text"></i><div class="stat-val">142</div><div class="stat-lbl">Resolved Tickets</div></div>
+                <div class="stat-card lime"><i class="ph ph-activity"></i><div class="stat-val">99.9</div><div class="stat-lbl">Uptime (%)</div></div>
+                <div class="stat-card sky"><i class="ph ph-users"></i><div class="stat-val">200</div><div class="stat-lbl">Engineers</div></div>
+            </div>
+
+            <h3 class="section-title">Core Infrastructure</h3>
+            <div class="img-grid">
+                <div class="img-card"><img src="viewer1theme.webp" alt="Cloud Computing"/><div class="img-overlay"><span class="img-tag">Cloud</span><h4>Cloud Architecture</h4><p>Servers: 12</p></div></div>
+                <div class="img-card"><img src="viewer2theme.webp" alt="Cybersecurity"/><div class="img-overlay"><span class="img-tag">Security</span><h4>Cyber Defense Center</h4><p>Incidents: 0</p></div></div>
+                <div class="img-card"><img src="viewer3theme.webp" alt="Software Development"/><div class="img-overlay"><span class="img-tag">Software</span><h4>DevOps Hub</h4><p>Deployments: 6</p></div></div>
+                <div class="img-card"><img src="viewer4theme.webp" alt="Data Analytics"/><div class="img-overlay"><span class="img-tag">Data</span><h4>Database Clusters</h4><p>Status: Maintenance</p></div></div>
+                <div class="img-card"><img src="index1theme.webp" alt="IT Infrastructure"/><div class="img-overlay"><span class="img-tag">Infrastructure</span><h4>Network Switches</h4><p>Active: 9</p></div></div>
+                <div class="img-card"><img src="viewer6theme.webp" alt="Managed IT"/><div class="img-overlay"><span class="img-tag">Managed IT</span><h4>Help Desk</h4><p>Tickets: 9</p></div></div>
+            </div>
+        </div>
+
+        <!-- ─── SYSTEM STATUS ─── -->
+        <div class="page" id="page-energy">
+            <h2 class="page-heading">Live System Status</h2>
+            <div class="energy-feed" id="energyFeed"></div>
+            <button class="page-btn" onclick="location.href='404.html'"><i class="ph ph-download-simple"></i> Export Log</button>
+        </div>
+
+        <!-- ─── GLOBAL NETWORK ─── -->
+        <div class="page" id="page-sites">
+            <h2 class="page-heading">Global Network Map</h2>
+            <div class="map-placeholder">
+                <img src="Map.webp" alt="Network Map"/>
+                <div class="map-pins">
+                    <div class="map-pin" style="top:28%;left:22%"><i class="ph ph-map-pin"></i><span>New York</span></div>
+                    <div class="map-pin" style="top:48%;left:58%"><i class="ph ph-map-pin"></i><span>London</span></div>
+                    <div class="map-pin" style="top:72%;left:38%"><i class="ph ph-map-pin"></i><span>Singapore</span></div>
+                    <div class="map-pin" style="top:35%;left:78%"><i class="ph ph-map-pin"></i><span>Tokyo</span></div>
+                </div>
+            </div>
+            <button class="page-btn" onclick="location.href='404.html'"><i class="ph ph-share-network"></i> Share Map</button>
+        </div>
+
+        <!-- ─── REPORTS ─── -->
+        <div class="page" id="page-reports">
+            <h2 class="page-heading">Reports</h2> 
+            <div class="report-list">
+                <div class="report-item"><i class="ph ph-file-text"></i><div><strong>June 2026 — Monthly Summary</strong><p>Infrastructure metrics</p></div><a href="404.html" class="btn-sm">Download</a></div>
+                <div class="report-item"><i class="ph ph-file-text"></i><div><strong>Q1 2026 — Quarterly Review</strong><p>System performance</p></div><a href="404.html" class="btn-sm">Download</a></div>
+                <div class="report-item"><i class="ph ph-file-text"></i><div><strong>Annual Report 2025</strong><p>Annual Uptime Review</p></div><a href="404.html" class="btn-sm">Download</a></div>
+            </div>
+        </div>
+ 
+        <!-- ─── GALLERY ─── -->
+        <div class="page" id="page-gallery">
+            <h2 class="page-heading">Gallery</h2>
+            <div class="gallery-grid">
+                <img src="viewer1theme.webp" alt="Cloud Computing"/>
+                <img src="viewer2theme.webp" alt="Software Development"/>
+                <img src="viewer3theme.webp" alt="Data Analytics"/>
+                <img src="viewer4theme.webp" alt="IT Infrastructure"/>
+                <img src="viewer6theme.webp" alt="Managed IT Services"/>
+                  <img src="ab2_1.webp" alt="Managed IT Services"/>
+            </div>
+        </div>
+
+        <!-- ─── NEWS ─── -->
+        <div class="page" id="page-news">
+            <h2 class="page-heading">Stackly News</h2>
+            <div class="news-list">
+                <div class="news-card">
+                    <img src="viewer2theme.webp" alt="Cybersecurity Threat"/>
+                    <div class="news-body"><span class="news-tag">Security</span><h4>Zero-Day Vulnerability Patched</h4><p>Critical security update deployed globally.</p><a href="404.html" class="news-link">Read more <i class="ph ph-arrow-right"></i></a></div>
+                </div>
+                <div class="news-card">
+                    <img src="viewer2theme.webp" alt="Cloud computing"/>
+                    <div class="news-body"><span class="news-tag">Cloud</span><h4>New Cloud Infrastructure Online</h4><p>Latency reduced by 40% in EU regions.</p><a href="404.html" class="news-link">Read more <i class="ph ph-arrow-right"></i></a></div>
+                </div>
+                <div class="news-card">
+                    <img src="viewer3theme.webp" alt="Software update"/>
+                    <div class="news-body"><span class="news-tag">Software</span><h4>Stackly v2.0 Enterprise Release</h4><p>Major improvements to the core API stack.</p><a href="404.html" class="news-link">Read more <i class="ph ph-arrow-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── LEARN ─── -->
+        <div class="page" id="page-learn">
+            <h2 class="page-heading">Learning Hub</h2>
+            <div class="learn-grid">
+                <div class="learn-card"><i class="ph ph-shield-check"></i><h4>Cybersecurity Basics</h4><p>Understanding encryption, firewalls, and network defense.</p><a href="404.html" class="btn-sm">Start</a></div>
+                <div class="learn-card"><i class="ph ph-cloud"></i><h4>Cloud Architecture</h4><p>Scalable deployments, serverless, and containers.</p><a href="404.html" class="btn-sm">Start</a></div>
+                <div class="learn-card"><i class="ph ph-code"></i><h4>Modern Development</h4><p>Agile methodologies, CI/CD, and DevOps practices.</p><a href="404.html" class="btn-sm">Start</a></div>
+            </div>
+        </div>
+
+        <!-- ─── PROFILE ─── -->
+        <div class="page" id="page-profile">
+            <h2 class="page-heading">My Profile</h2>
+            <div class="profile-card">
+                <div class="profile-avatar" id="profileAvatar">V</div>
+                <h3 id="profileName">—</h3>
+                <p id="profileEmail" class="profile-email">—</p>
+                <div class="profile-badge">Viewer</div>
+                <a href="404.html" class="btn-sm" style="margin-top:20px">Edit Profile</a>
+            </div>
+        </div>
+
+        <!-- ─── SETTINGS ─── -->
+        <div class="page" id="page-settings">
+            <h2 class="page-heading">Settings</h2>
+            <div class="settings-list">
+                <div class="setting-row"><span>Email notifications</span><a href="404.html" class="btn-sm">Configure</a></div>
+                <div class="setting-row"><span>Language &amp; timezone</span><a href="404.html" class="btn-sm">Configure</a></div>
+                <div class="setting-row"><span>Change password</span><a href="404.html" class="btn-sm">Update</a></div>
+                <div class="setting-row"><span>Delete account</span><a href="404.html" class="btn-sm danger">Delete</a></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="dashboardviewer.js"></script>
+</body>
+</html>

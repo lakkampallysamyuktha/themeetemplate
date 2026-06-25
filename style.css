@@ -185,7 +185,7 @@ body {
   min-height: 600px;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .hero-slides {
   position: absolute;
@@ -275,15 +275,14 @@ body {
   position: relative;
   z-index: 10;
   width: 100%;
-  padding: 0 30px 160px 220px;
+  padding: 80px 30px 40px 220px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .hero-left {
   flex: 1;
   max-width: 780px;
-  margin-top: auto;
 }
 .hero-title {
   font-size: clamp(48px, 5.6vw, 70px);
@@ -863,6 +862,21 @@ body {
   overflow: hidden;
   padding: 0;
 }
+.services-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.services.in-view .services-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+.services.in-view .services-anim:nth-child(1) { transition-delay: 0.1s; }
+.services.in-view .services-anim:nth-child(2) { transition-delay: 0.25s; }
+.services.in-view .services-anim:nth-child(3) { transition-delay: 0.4s; }
+.services.in-view .services-anim:nth-child(4) { transition-delay: 0.55s; }
+.services.in-view .services-anim:nth-child(5) { transition-delay: 0.7s; }
+.services.in-view .services-anim:nth-child(6) { transition-delay: 0.85s; }
 .services-bg {
   position: absolute;
   inset: 0;
@@ -1516,6 +1530,24 @@ body {
   margin: 0 auto;
   padding: 0 40px;
 }
+.it-solutions-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.it-solutions.in-view .it-solutions-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+.it-solutions.in-view .it-solutions-anim:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.it-solutions.in-view .it-solutions-anim:nth-child(2) {
+  transition-delay: 0.25s;
+}
+.it-solutions.in-view .it-solutions-anim:nth-child(3) {
+  transition-delay: 0.4s;
+}
 .it-solutions-heading {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
@@ -1665,6 +1697,17 @@ body {
   padding: 100px 0;
   background-color: #0a0c16;
 }
+.teams-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.teams.in-view .teams-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+.teams.in-view .teams-anim:nth-child(1) { transition-delay: 0.2s; }
+.teams.in-view .teams-anim:nth-child(2) { transition-delay: 0.4s; }
 .teams-bg {
   position: absolute;
   inset: 0;
